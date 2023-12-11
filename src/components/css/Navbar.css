@@ -21,8 +21,8 @@ body {
 .navbar {
     background-color: var(--background-color);
     display: flex;
-    flex-direction: row; 
-     align-items: center;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 10px;
 
@@ -49,9 +49,6 @@ body {
     padding: 0;
 }
 
-.nav-item {
-    margin-right: 20px;
-}
 
 .nav-item a {
     text-decoration: none;

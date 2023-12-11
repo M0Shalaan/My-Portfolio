@@ -9,7 +9,12 @@ const Home = () => {
       <div className="hero-section" id="home">
         <div className="hero-content">
           <h1>Welcome to MySite</h1>
-          <p>Explore and discover something amazing...</p>
+          <p>
+            Welcome to my creative corner! 🌟 I'm passionate about crafting
+            digital experiences that captivate and inspire. Dive into my world
+            of projects, designs, and ideas. Let's create something amazing
+            together!
+          </p>
         </div>
       </div>
       <div className="about-section">

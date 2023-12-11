@@ -3,13 +3,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #dcdcdc;
+    /* background-color: #fcfcfc; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     /* Set a background color for the body */
+    --background-color: #fcfcfc;
+    --primary-color: #000;
+    color: var(--primary-color);
 }
 
 
@@ -22,7 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .hero-content {
@@ -33,12 +36,12 @@ body {
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .hero-content p {
     font-size: 1.2em;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 /* Other sections */
@@ -78,9 +81,10 @@ body {
         font-size: 1em;
     }
 }
+
 /* Contact section styles */
 .contact-section {
-    background-color: #fff;
+    background-color: var(--background-color);
     /* Background color for contact section */
     padding: 50px 20px;
     text-align: center;
