@@ -1,38 +1,37 @@
-// Projects.jsx
-import '../App.css'
-const Projects = () => {
+// ProjectsPage.jsx
+
+import React from "react";
+import ProjectCard from "./ProjectCard";
+
+const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: "Project 1",
+      title: "Project Title 1",
       description: "Description for Project 1...",
-      link: "https://example.com/project1",
     },
     {
       id: 2,
-      title: "Project 2",
+      title: "Project Title 2",
       description: "Description for Project 2...",
-      link: "https://example.com/project2",
     },
-    // Add more projects as needed
+    // Add more project objects as needed
   ];
 
   return (
-    <div className="projects-container">
-      <h2>My Projects</h2>
-      <div className="projects-list">
+    <div>
+      <h1>Projects</h1>
+      <div className="project-list">
         {projects.map((project) => (
-          <div className="project" key={project.id}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              Visit Project
-            </a>
-          </div>
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsPage;

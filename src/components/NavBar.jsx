@@ -1,33 +1,14 @@
-import  { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import "../App.css"; // Import your CSS file
+import "./css/Navbar.css"; // Import your CSS for navbar styles
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <h2>MySite</h2>
+    <nav className={"navbar sticky"}>
+      {/* Navbar content */}
+      <div className="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div className="menu-icon" onClick={toggleMenu}>
-        <FaBars />
-      </div>
-      <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">
-          <a href="#about">About</a>
-        </li>
-        <li className="nav-item">
-          <a href="#services">Services</a>
-        </li>
-        <li className="nav-item">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
     </nav>
   );
 };

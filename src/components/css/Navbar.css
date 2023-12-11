@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+/* Reset styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    /* Define colors using CSS variables */
+    --primary-color: #e5e6e8;
+    /* Main color for navbar background */
+    --text-color: #785c5c;
+    /* Text color for navbar links */
+    --hover-color: #778995;
+    /* Color on hover for navbar links */
+    --background-color: #e5e6e8;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row; 
+     align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+}
+
+.navbar.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.navbar-brand h2 {
+    margin: 0;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background-color: var(--background-color);
+        transition: left 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Navbar.css */
