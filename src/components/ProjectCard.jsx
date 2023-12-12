@@ -1,9 +1,8 @@
 // ProjectCard.jsx
-
-import React from "react";
 import "./css/ProjectCard.css";
+import { FaGithub, FaLinkedin, FaHackerrank, FaLink } from "react-icons/fa";
 
-const ProjectCard = ({ title, description, imageUrl ,link}) => {
+const ProjectCard = ({ title, description, imageUrl, liveLink, gitLink }) => {
   return (
     <div className="project-card">
       <div className="project-image">
@@ -12,8 +11,11 @@ const ProjectCard = ({ title, description, imageUrl ,link}) => {
       <div className="project-info">
         <h3>{title}</h3>
         <p>{description}</p>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          Link
+        <a href={liveLink} target="_blank" rel="noopener noreferrer">
+          <FaLink />
+        </a>
+        <a href={gitLink} target="_blank" rel="noopener noreferrer">
+          <FaGithub />
         </a>
       </div>
     </div>
