@@ -4,8 +4,7 @@ import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
 const ContactSection = () => {
   return (
     <ContactContainer>
-      <h2>Contact</h2>
-      <p>Connect with me:</p>
+      <h2>Connect with me:</h2>
       <IconWrapper>
         <IconLink
           href="https://github.com/M0Shalaan"
@@ -31,7 +30,6 @@ const ContactSection = () => {
         >
           <FaHackerrank />
         </IconLink>
-        {/* Add more icons and links */}
       </IconWrapper>
     </ContactContainer>
   );
